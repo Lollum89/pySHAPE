@@ -1,0 +1,46 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Git / meta
+.git-*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.pytest_cache/
+.coverage
+coverage.xml
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+dist/
+build/
+site/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MATLAB
+*.asv
+*.m~
+*.mex*
+
+# Logs
+*.log
+logs/
+
+# Windows
+ehthumbs.db
+Desktop.ini
