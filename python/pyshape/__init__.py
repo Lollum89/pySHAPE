@@ -11,6 +11,7 @@ from .form import (
 	form_parameters_zingg,
 )
 from .io import load_stl
+from .roughness import sa, sq, sdq, sku, ssk, roughness_functions
 
 __all__ = [
 	"surface_area",
@@ -25,4 +26,10 @@ __all__ = [
 	"form_parameters_potticary_et_al",
 	"form_parameters_zingg",
 	"load_stl",
+	"sa",
+	"sq",
+	"sdq",
+	"sku",
+	"ssk",
+	"roughness_functions",
 ]
