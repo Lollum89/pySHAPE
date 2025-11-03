@@ -53,11 +53,11 @@ class ShapeGUI(TkinterDnD):
         self.geometry("1100x700")
 
         # State
-    self.nodes = None
-    self.faces = None
-    self.current_file = None
+        self.nodes = None
+        self.faces = None
+        self.current_file = None
 
-    self._build_ui()
+        self._build_ui()
 
     def _build_ui(self):
         # Layout: left controls, right 3D view
