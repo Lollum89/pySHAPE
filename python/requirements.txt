@@ -2,3 +2,12 @@ numpy>=1.20
 pytest>=7.0
 trimesh>=3.23
 matplotlib>=3.8
+
+# OpenGL dependencies for high-performance 3D rendering
+PyOpenGL>=3.1.0
+PyOpenGL-accelerate>=3.1.0
+moderngl>=5.8.0
+pillow>=10.0.0
+
+# Optional: drag-and-drop support for GUI
+# tkinterdnd2>=0.3.0

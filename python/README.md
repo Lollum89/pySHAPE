@@ -130,6 +130,7 @@ Run ready-made demos from `python/examples/` (they use bundled assets for standa
 - `python/examples/stl_area_and_orientation.py` — load an STL, print surface area and (C,F,R)
 - `python/examples/tetra_volume_inertia.py` — build a tetrahedral mesh and print volume, centroid, inertia
 - `python/examples/form_metrics_demo.py` — sphericities, form parameters, and wrappers
+- `python/examples/gui_shape_viewer.py` — **OpenGL-accelerated GUI** for interactive 3D visualization and metric computation
 
 Run them:
 
@@ -137,4 +138,37 @@ Run them:
 python python/examples/stl_area_and_orientation.py
 python python/examples/tetra_volume_inertia.py
 python python/examples/form_metrics_demo.py
+python python/examples/gui_shape_viewer.py  # Interactive GUI
 ```
+
+### GUI Shape Viewer (OpenGL-Enhanced)
+
+The interactive GUI viewer now features **hardware-accelerated OpenGL rendering** for significantly better 3D graphics performance:
+
+**Features:**
+- Real-time 3D mesh visualization with smooth rotation and zoom
+- Hardware-accelerated rendering (OpenGL 3.3 with modern shader pipeline)
+- Interactive metric calculation (sphericity, orientation, form parameters, etc.)
+- Drag-and-drop STL file support
+- Automatic fallback to matplotlib if OpenGL is unavailable
+
+**Install OpenGL dependencies:**
+
+```bash
+# Windows
+python\install_opengl.bat
+
+# Linux/Mac
+bash python/install_opengl.sh
+
+# Or manually:
+pip install PyOpenGL PyOpenGL-accelerate moderngl pillow
+```
+
+**Run the viewer:**
+
+```bash
+python python/examples/gui_shape_viewer.py
+```
+
+See `python/examples/OPENGL_README.md` for detailed documentation on the OpenGL enhancements, performance comparisons, and troubleshooting.
